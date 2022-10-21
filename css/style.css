@@ -1,0 +1,102 @@
+
+
+:root{
+   --color:  #400E03;
+   --font:'Sora', sans-serif;
+}
+body{
+    font-family: var(--font) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+        color: var(--color);
+} 
+.block-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color);
+    text-align: center;
+}
+.show-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color);
+    padding-bottom: 12px;
+    padding-top: 5px;
+}
+.show-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.myShowCase a {
+    line-height: normal;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+}
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 50px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ED1C24 !important;
+}
+.swiper-button-prev.myShowCase-prev , .swiper-button-next.myShowCase-next {
+    width: 48px;
+    height: 48px;
+    background: #400E03;
+    border-radius: 2px;
+}
+
+.swiper-button-prev.myShowCase-prev:after , .swiper-button-next.myShowCase-next:after {
+    font-size: 20px;
+    color: #fff;
+}
+iframe {
+    height: 750px;
+}
+ @media screen and (max-width: 1400px) { 
+    
+     .show-title {
+         font-size: 17px;
+         min-height: 68px;
+     }
+     .block-title {
+        font-size: 24px;
+        text-align: left;
+    }
+    .myShowCase a {
+        font-size: 10px;
+    }
+    iframe {
+        height: auto;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .nav-link {
+        display: flex;
+    }
+    .nav-link svg {
+        margin-left: auto;
+    }
+    #navbarNav {
+        background: #400E03;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+        border-bottom: 1px solid #525252;
+    }
+    
+    .navbar-light .navbar-nav .nav-link.active , .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: #fff;
+    }
+ }
